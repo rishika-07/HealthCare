@@ -1,0 +1,60 @@
+.FooterContainer{
+    margin-top: 40px;
+    background-color: rgba(230, 227, 227, 0.5);
+    width: 100vw;
+    height: 250px;
+    padding: 40px;
+    overflow: hidden;
+}
+.FooterContent{
+    display:grid;
+    grid-template-columns: 0.5fr 1fr   ;
+    justify-content: space-between;
+    align-items: end;
+    gap:1px;
+    padding:40px;
+   
+}
+.logoContentLeft{
+    line-height: 80px;
+    padding: 0px 0px 0px 20px;
+    align-items: left;
+}
+.logoContentLeft h2{
+    font-size: 1.5rem;
+  
+    color:black;
+}
+.logoContentRightGrid{
+    margin-left: 45%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content:space-between;
+}
+.logoContentRightGrid h2{
+    font-size: 1.3rem;
+    color:black;
+}
+.logoContentRightGrid ul{
+    color:lightslategray;
+}
+.logoContentRightGrid ul li{
+    list-style: none;
+    padding: 2px;
+}
+.logoContentRightGrid ul :hover{
+    color: black;
+    cursor: pointer;
+}
+body.dark-mode .FooterContainer{
+    background-color:  rgba(0, 0, 0, 0.5);
+}
+body.dark-mode .logoContentRightGrid{
+    color:rgba(230, 227, 227, 0.5);
+}
+body.dark-mode .logoContentLeft h2{
+    color:  ivory;
+}
+body.dark-mode .logoContentRightGrid h2{
+    color:  ivory;
+}
